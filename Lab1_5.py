@@ -15,11 +15,11 @@ def safe_apply(func, data):
     return results, errors
 
 
-# Демонстрация работы функции
 data_list = ['4', '16', 'text', '-25', '9.0']
 func_to_apply = lambda x: float(x) ** 0.5  # Функция, извлекающая квадратный корень
 
 results, errors = safe_apply(func_to_apply, data_list)
 
 print("Results:", results)
+
 print("Errors:", errors)
